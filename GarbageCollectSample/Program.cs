@@ -20,7 +20,7 @@ namespace GarbageCollectSample
 			GC.Collect();
 			long afterCollect = GC.GetTotalMemory (false);
 			Console.WriteLine ("Memory used after full collection: {0}",afterCollect);
-			Console.WriteLine ("Memory freed: {0}",beforeCollect-afterCollect);
+			Console.WriteLine ("Memory freed after Garbage Collection: {0}",beforeCollect-afterCollect);
 		}
 
 		static void creatingGarbage(int size)
